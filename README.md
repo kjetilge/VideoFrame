@@ -65,7 +65,7 @@ Step 1) Declaration - Initial declaration is done with a configuration object.
 * id defines the video element;
 * frameRate defines the frame rate of the video source being played.
 * callback defines a callback function that is called when a frame is captured.
-```html
+```
 <body>
   <h1>VideoFrame demo</h1>
   {{>video}}
@@ -81,8 +81,7 @@ Step 1) Declaration - Initial declaration is done with a configuration object.
 ```
 
 
-```javascript
-//client
+```
 Template.video.onRendered(function () {
   VF = VideoFrame({
       id : 'videoPlayer',
@@ -92,7 +91,7 @@ Template.video.onRendered(function () {
       }
   });
   VF.listen("SMPTE", FrameRates.PAL);
-})
+});
 
 Template.video.onDestroyed(function () {
   VF.stopListen();
