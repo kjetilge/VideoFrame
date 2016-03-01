@@ -1,3 +1,5 @@
+This is a port of the VideoFrame API to Meteor. There are only a small changes of the original code, witch is the ability to update values when video is seeked. This Readme has also been updated to reflect meteor usage.
+
 ## VideoFrame - HTML5 Video - SMPTE Time Code capturing and Frame Seeking API - Version: 0.2.2
 ### (c) 2012 Allen Sarkisyan - Released under the Open Source MIT License
 
