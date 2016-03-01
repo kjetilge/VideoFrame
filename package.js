@@ -1,7 +1,7 @@
 Package.describe({
   name: 'telstar:videoframe',
   version: '0.0.1',
-  summary: 'A port of the VideoFrame API to Meteor. There are only a small changes of the original code, which is the ability to update values when video is seeked. This Readme has also been updated to reflect meteor usage.',
+  summary: 'A port of the VideoFrame API. Easily capture SMPTE Time Code and seek video',
   git: 'https://github.com/kjetilge/VideoFrame.git',
   documentation: 'README.md'
 });
