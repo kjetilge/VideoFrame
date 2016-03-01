@@ -65,12 +65,11 @@ Step 1) Declaration - Initial declaration is done with a configuration object.
 * id defines the video element;
 * frameRate defines the frame rate of the video source being played.
 * callback defines a callback function that is called when a frame is captured.
-```
+```html
 <body>
   <h1>VideoFrame demo</h1>
   {{>video}}
 </body>
-
 <template name="video">
   <div><h3>Current Time : <span  id="currentTime">00:00:00:00</span></h3></div>
   <video id="videoPlayer" width="720" height="400" controls>
@@ -80,8 +79,7 @@ Step 1) Declaration - Initial declaration is done with a configuration object.
 </template>
 ```
 
-
-```
+```javascript
 Template.video.onRendered(function () {
   VF = VideoFrame({
       id : 'videoPlayer',
@@ -97,6 +95,7 @@ Template.video.onDestroyed(function () {
   VF.stopListen();
 });
 ```
+
 
 You may also initiate VideoFrame without a configuration object if you are certain you have a HTML5 video element on the page, and the video source frame rate is 24fps.
 
